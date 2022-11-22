@@ -1,8 +1,13 @@
 import styles from './Select.module.scss';
 
-const Select = ({ children, onChange, ...rest }) => {
+const Select = ({ props, children, onChange, ...rest }) => {
   return (
-    <select onChange={onChange} className={styles.select} {...rest}>
+    <select
+      data-testid={props}
+      onChange={onChange}
+      className={styles.select}
+      {...rest}
+    >
       {children}
     </select>
   );
