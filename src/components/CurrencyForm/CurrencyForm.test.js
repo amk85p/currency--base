@@ -19,6 +19,7 @@ describe('Component CurrencyForm', () => {
       const action = jest.fn();
 
       // render component
+
       render(<CurrencyForm action={action} />);
 
       // find “convert” button
